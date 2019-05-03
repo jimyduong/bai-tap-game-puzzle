@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>puzzle</title>
+</head>
+<body>
+<img src="a1.jpg" onclick="doi1()" id="aa1" height="200" width="500"/>
+<br>
+<img src="a2.jpg" onclick="doi2()" id="aa2" height="200" width="500"/>
+<br>
+<img src="a3.jpg" onclick="doi3()" id="aa3" height="200" width="500"/>
+<p id="hienthi"></pid>
+</body>
+<script>
+    let link1 = "a1.jpg";
+    let link2 = "a2.jpg";
+    let link3 = "a3.jpg";
+
+
+    function doi1() {
+
+        if (link1 == "a1.jpg") {
+            link1 = "b1.jpg"
+        } else if (link1 == "b1.jpg") {
+            link1 = "c1.jpg";
+        } else {
+            link1 = "a1.jpg"
+        }
+        document.getElementById("aa1").src = link1;
+        if (link1 === "a1.jpg" && link2 === "a2.jpg" && link3 === "a3.jpg") {
+            document.getElementById("hienthi").innerHTML = "ban da ghep duoc eric cantona";
+        } else if (link1 === "b1.jpg" && link2 === "b2.jpg" && link3 === "b3.jpg") {
+            document.getElementById("hienthi").innerHTML = "ban da ghep dc david beckham";
+        } else if (link1 === "c1.jpg" && link2 === "c2.jpg" && link3 === "c3.jpg") {
+            document.getElementById("hienthi").innerHTML = "ban da ghep dc cristiano ronaldo";
+        }
+        else {
+            document.getElementById("hienthi").innerHTML="ban ghep chua dung";
+        }
+    }
+
+    function doi2() {
+
+        if (link2 == "a2.jpg") {
+            link2 = "b2.jpg"
+        } else if (link2 == "b2.jpg") {
+            link2 = "c2.jpg";
+        } else {
+            link2 = "a2.jpg"
+        }
+        document.getElementById("aa2").src = link2;
+        if (link1 === "a1.jpg" && link2 === "a2.jpg" && link3 === "a3.jpg") {
+            document.getElementById("hienthi").innerHTML = "ban da ghep duoc eric cantona";
+        } else if (link1 === "b1.jpg" && link2 === "b2.jpg" && link3 === "b3.jpg") {
+            document.getElementById("hienthi").innerHTML = "ban da ghep dc david beckham";
+        } else if (link1 === "c1.jpg" && link2 === "c2.jpg" && link3 === "c3.jpg") {
+            document.getElementById("hienthi").innerHTML = "ban da ghep dc cristiano ronaldo";
+        }
+        else {
+            document.getElementById("hienthi").innerHTML="ban ghep chua dung";
+        }
+    }
+
+    function doi3() {
+
+        if (link3 == "a3.jpg") {
+            link3 = "b3.jpg"
+        } else if (link3 == "b3.jpg") {
+            link3 = "c3.jpg";
+        } else {
+            link3 = "a3.jpg"
+        }
+        document.getElementById("aa3").src = link3;
+        if (link1 === "a1.jpg" && link2 === "a2.jpg" && link3 === "a3.jpg") {
+            document.getElementById("hienthi").innerHTML = "ban da ghep duoc eric cantona";
+        } else if (link1 === "b1.jpg" && link2 === "b2.jpg" && link3 === "b3.jpg") {
+            document.getElementById("hienthi").innerHTML = "ban da ghep dc david beckham";
+        } else if (link1 === "c1.jpg" && link2 === "c2.jpg" && link3 === "c3.jpg") {
+            document.getElementById("hienthi").innerHTML = "ban da ghep dc cristiano ronaldo";
+        }
+        else {
+            document.getElementById("hienthi").innerHTML="ban ghep chua dung";
+        }
+    }
+
+
+</script>
+</html>
